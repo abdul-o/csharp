@@ -35,15 +35,16 @@ namespace guessing_game
 
                      if (i == 0)
                      {
-                            Console.Write(" Game started! Enter your guess number ");
+                            Console.WriteLine(" Game started! At this level you are to guess a number between 1 - 10 ");
+                            Console.Write( " Enter your guess number ");
                             first = int.Parse(Console.ReadLine()); 
                          if    (first == 5){
-                              Console.Write("Good one!!! You guess right");
+                              Console.Write("You got it right!");
                           }
                           else{ 
 
-                           Console.WriteLine("AUSH!!!!   you guess wrong");
-                           Console.WriteLine("You have five attempt left");
+                           Console.WriteLine("That was wrong ");
+                           Console.WriteLine("You have five attempts left ");
                         }  
                      }
                      else if (i == 1 && first != 5 )
@@ -51,12 +52,12 @@ namespace guessing_game
                          Console.Write(" Enter your guess number ");
                             second = int.Parse(Console.ReadLine()); 
                          if    (second == 2){
-                              Console.Write("Good one!!! You guess right ");
+                              Console.Write("You got it right! ");
                           }
                           else{ 
 
-                           Console.WriteLine("you guess wrong");
-                           Console.WriteLine("You have four attempt left");
+                           Console.WriteLine("That was wrong");
+                           Console.WriteLine("You have four attempst left ");
                         }  
                      }
                      else if (i== 2 && second != 2 && first != 5 )
@@ -64,12 +65,12 @@ namespace guessing_game
                          Console.Write(" Enter your guess number ");
                             third = int.Parse(Console.ReadLine()); 
                          if    (third == 8){
-                              Console.Write("Awe Some !!! You guess right  you are a super human you have finish the levels");
+                              Console.Write("You got it right! ");
                           }
                           else{ 
 
-                           Console.WriteLine("you guess wrong");
-                           Console.WriteLine("You have three attempt left ");
+                           Console.WriteLine("That was wrong ");
+                           Console.WriteLine("You have three attempts left ");
                         }  
                      }
                      else if (i== 3 && third != 8 && first != 5 && second != 2)
@@ -77,12 +78,12 @@ namespace guessing_game
                          Console.Write(" Enter your guess number ");
                             fourth = int.Parse(Console.ReadLine()); 
                          if    (fourth == 1){
-                              Console.Write("Awe Some !!! You guess right  you are a super human you have finish the levels");
+                              Console.Write("You got it right!s");
                           }
                           else{ 
 
-                           Console.WriteLine("you guess wrong");
-                           Console.WriteLine("You have two attempt left ");
+                           Console.WriteLine("That was wrong ");
+                           Console.WriteLine("You have two attempts left ");
                         }  
                      }
                      else if (i== 4 && fourth != 1 && third != 8 && first != 5 && second != 2)
@@ -90,12 +91,12 @@ namespace guessing_game
                          Console.Write(" Enter your guess number ");
                             fifth = int.Parse(Console.ReadLine()); 
                          if    (fifth == 5){
-                              Console.Write("Awe Some !!! You guess right ");
+                              Console.Write("You got it right! ");
                           }
                           else{ 
 
-                           Console.WriteLine("you guess wrong");
-                           Console.WriteLine("You have one attempt left");
+                           Console.WriteLine("That was wrong ");
+                           Console.WriteLine("You have one attempt left ");
                         }  
                      }
                      else if (i== 5 && fifth != 5  && fourth != 1 && third != 8 && first != 5 && second != 2)
@@ -103,19 +104,132 @@ namespace guessing_game
                          Console.Write(" Enter your guess number ");
                             sixth = int.Parse(Console.ReadLine()); 
                          if    (sixth == 9){
-                              Console.Write("Awe Some !!! You guess right  you are a super human you have finish the levels");
+                              Console.Write("You got it right!");
                           }
                           else{ 
 
-                           Console.WriteLine("you guess wrong");
-                           Console.WriteLine("You have exsust your life  GAME OVER!!");
+                           Console.WriteLine("That was wrong ");
+                           Console.WriteLine("You have exsust your life  GAME OVER!! ");
                         }  
                      }
                      
                      
                   }
                     
-               };
+               }
+               else if ( levelChoose == "M")
+               {
+                   for (int i = 0; i < 4; i++)
+                   {
+                      if (i == 0)
+                     {
+                            Console.WriteLine(" Game started! At this level you are to guess a number between 1 - 20 ");
+                            Console.Write( " Enter your guess number ");
+                            first = int.Parse(Console.ReadLine()); 
+                         if    (first == 12){
+                              Console.Write("You got it right!");
+                          }
+                          else{ 
+
+                           Console.WriteLine("That was wrong ");
+                           Console.WriteLine("You have three attempts left ");
+                        }
+                     }   
+                        else if (i == 1 && first != 12 )
+                     {
+                         Console.Write(" Enter your guess number ");
+                            second = int.Parse(Console.ReadLine()); 
+                         if    (second == 6){
+                              Console.Write("You got it right! ");
+                          }
+                          else{ 
+
+                           Console.WriteLine("That was wrong");
+                           Console.WriteLine("You have two attempts left ");
+                        }  
+                     } 
+
+                     else if (i== 2 && second != 6 && first != 12 )
+                     {
+                         Console.Write(" Enter your guess number ");
+                            third = int.Parse(Console.ReadLine()); 
+                         if    (third == 16){
+                              Console.Write("You got it right");
+                          }
+                          else{ 
+
+                           Console.WriteLine("That was wrong ");
+                           Console.WriteLine("You have one attempt left ");
+                        }  
+                     }
+                     else if (i == 3 && first != 12 && second != 6 && third != 16 )
+                     {
+                         Console.Write(" Enter your guess number ");
+                            second = int.Parse(Console.ReadLine()); 
+                         if    (second == 20){
+                              Console.Write("You got it right! ");
+                          }
+                          else{ 
+
+                           Console.WriteLine("That was wrong");
+                           Console.WriteLine("You have exsust your life  GAME OVER!! ");
+                        }  
+                     } 
+                       
+                   } 
+               }
+
+
+
+               else if ( levelChoose == "H")
+               {
+                   for (int i = 0; i < 3; i++)
+                   {
+                      if (i == 0)
+                     {
+                            Console.WriteLine(" Game started! At this level you are to guess a number between 1 - 50 ");
+                            Console.Write( " Enter your guess number ");
+                            first = int.Parse(Console.ReadLine()); 
+                         if    (first == 23){
+                              Console.Write("You got it right");
+                          }
+                          else{ 
+
+                           Console.WriteLine("That was wrong ");
+                           Console.WriteLine("You have two attempts left ");
+                        }
+                     }   
+                        else if (i == 1 && first != 23 )
+                     {
+                         Console.Write(" Enter your guess number ");
+                            second = int.Parse(Console.ReadLine()); 
+                         if    (second == 17){
+                              Console.Write("You got it right! ");
+                          }
+                          else{ 
+
+                           Console.WriteLine("That was wrong");
+                           Console.WriteLine("You have one attempts left ");
+                        }  
+                     } 
+                     else if (i == 2 && first != 23 && second != 17 )
+                     {
+                         Console.Write(" Enter your guess number ");
+                            second = int.Parse(Console.ReadLine()); 
+                         if    (second == 46){
+                              Console.Write("You got it right! ");
+                          }
+                          else{ 
+
+                           Console.WriteLine("That was wrong");
+                           Console.Write("You have exsust your life  GAME OVER!! ");
+                        }  
+                     }
+                   }   
+               } 
+               
+                   
+               
 
      
 
