@@ -21,6 +21,7 @@ namespace guessing_game
          int fifth = 0;
          int sixth = 0;
             
+                   /* welcome message and instruction */
 
             Console.WriteLine( "Welcome to Orbit guessing game ");
             Console.WriteLine("Please choose your prefer level to play");
@@ -28,6 +29,8 @@ namespace guessing_game
             Console.WriteLine( "Enter M for Meduim,  ");
             Console.WriteLine( "Enter H for Hard,  ");
             levelChoose = Console.ReadLine();
+
+               /* Code for Easy level selection */
 
                if (levelChoose == "E") {
                   for (int i = 0; i < 6; i++)
@@ -117,6 +120,10 @@ namespace guessing_game
                   }
                     
                }
+
+
+               /* code for medium level selection*/
+
                else if ( levelChoose == "M")
                {
                    for (int i = 0; i < 4; i++)
@@ -180,6 +187,7 @@ namespace guessing_game
                }
 
 
+                   /* code for hard level selection*/
 
                else if ( levelChoose == "H")
                {
